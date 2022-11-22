@@ -16,7 +16,7 @@
       <ul class="navbar-nav">
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            <%= current_user.name %>
+            <%= display_username %>
           </a>
           <ul class="dropdown-menu dropdown-menu-end">
             <li><%= link_to 'Uredi profil', edit_user_registration_path, class: 'dropdown-item' %></li>
