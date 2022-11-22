@@ -14,16 +14,7 @@
         </li>
       </ul>
       <ul class="navbar-nav">
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            <%= display_username %>
-          </a>
-          <ul class="dropdown-menu dropdown-menu-end">
-            <li><%= link_to 'Uredi profil', edit_user_registration_path, class: 'dropdown-item' %></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><%= link_to 'Izpis', destroy_user_session_path, class: 'dropdown-item', data: {turbo_method: :delete} %></li>
-          </ul>
-        </li>
+        <%= display_right_navbar %>
       </ul>
     </div>
   </div>

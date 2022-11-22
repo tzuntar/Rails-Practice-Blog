@@ -8,11 +8,11 @@ module ApplicationHelper
     content_tag(:p, alert, class: 'alert') if alert.present?
   end
 
-  def display_username
-    if current_user.present?
-      current_user.name
+  def display_right_navbar
+    if user_signed_in?
+      render 'dropdown_options'
     else
-      'Prijavite se'
+      render 'login_buttons'
     end
   end
 
