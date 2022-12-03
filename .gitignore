@@ -37,6 +37,4 @@
 
 .idea/
 *.iml
-yarn.lock
-Gemfile.lock
 .ruby-version
