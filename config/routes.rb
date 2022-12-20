@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
-  resources :comments, only: [:create, :update, :destroy]
   devise_for :users
-  resources :posts
+
+  resources :posts do
+    resources :comments, only: [:create, :update, :destroy]
+  end
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Defines the root path route ("/")
